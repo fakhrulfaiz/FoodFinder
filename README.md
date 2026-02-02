@@ -16,7 +16,8 @@ A multimodal ReAct agent for intelligent restaurant recommendations using RAG (R
 - 🎨 **Streamlit UI** - Clean, ChatGPT-like interface
 
 ## 🎨 Streamlit UI
-<img width="1908" height="936" alt="image" src="https://github.com/user-attachments/assets/5d33ff58-c998-4133-bc64-981c4e8d0432" />
+<img width="890" height="913" alt="image" src="https://github.com/user-attachments/assets/86d1acea-ac4e-4ef9-809c-12da089da4b6" />
+
 
 ## 🏗️ Architecture
 
