@@ -8,6 +8,7 @@ from src.vectorstore.faiss_index import FAISSIndex
 from src.embeddings.text_embedder import TextEmbedder
 from src.embeddings.image_embedder import ImageEmbedder
 from scripts.metadata_utils import create_text_metadata, create_image_metadata
+from scripts.text_utils import create_rich_text
 
 def load_restaurants(data_path: str = "data/processed/restaurants.json"):
     with open(data_path, 'r', encoding='utf-8') as f:
@@ -23,7 +24,8 @@ def build_text_index(restaurants: list):
     metadata = []
     
     for restaurant in tqdm(restaurants, desc="Preparing texts"):
-        text = f"{restaurant['name']}. {restaurant.get('categories', '')}."
+        # Use rich text representation with all priority fields
+        text = create_rich_text(restaurant)
         texts.append(text)
         # Use comprehensive metadata from metadata_utils
         metadata.append(create_text_metadata(restaurant))
