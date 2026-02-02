@@ -1,0 +1,41 @@
+# Core Agent
+langgraph
+langchain
+langchain-community
+langchain-core
+langchain-deepseek
+langchain-openai
+
+# Backend API
+fastapi
+uvicorn
+python-multipart
+
+# Embeddings & ML
+# For GPU support, install PyTorch with CUDA first:
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+# Then comment out the lines below and run: pip install -r requirements.txt
+sentence-transformers
+transformers
+# torch  # Uncomment for CPU-only
+# torchvision  # Uncomment for CPU-only
+
+# FAISS (CPU version for Windows, GPU via conda if needed)
+faiss-cpu
+
+# Image Processing
+pillow
+opencv-python
+
+# Data
+pandas
+numpy
+
+# Frontend (Development)
+streamlit
+streamlit-chat
+
+# Utilities
+python-dotenv
+pydantic
+tqdm
