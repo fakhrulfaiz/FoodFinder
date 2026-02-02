@@ -81,6 +81,24 @@ The agent follows a reasoning-acting cycle:
    python scripts/process_data.py
    ```
 
+   This script will:
+   - Process Yelp business and photo data
+   - Generate embeddings for text (restaurant metadata) and images
+   - Build FAISS indices for fast similarity search
+   - Save processed data to `data/processed/`
+   - Create index files in `indexes/` directory
+
+   **Expected output:**
+   ```
+   indexes/
+   ├── text_index.faiss          # Text embeddings index
+   ├── text_metadata.pkl          # Restaurant metadata
+   ├── image_index.faiss          # Image embeddings index
+   └── image_metadata.pkl         # Image metadata
+   ```
+
+   **Note:** This process may take several minutes depending on dataset size.
+
 ### Running the App
 
 **Streamlit Chat Interface:**
